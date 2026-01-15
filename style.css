@@ -44,16 +44,19 @@ section {
     padding: 60px 20px;
 }
 
+.portfolio-title {
+    text-align: center;
+}
+
 /* Featured Photos */
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 30px;
 }
 
 .photo {
-    background-color: #1e1e1e;
     height: 250px;
     display: flex;
     align-items: center;
@@ -83,8 +86,6 @@ section {
 }
 
 .photo-folder {
-    background-color: #1e1e1e;
-    opacity: 0.3;
     height: 250px;
     display: flex;
     align-items: center;
@@ -92,12 +93,14 @@ section {
     color: #666;
     font-size: 0.9rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .photo-folder img {
     width: 150%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.3;
 }
 
 .photo-folder:hover {
@@ -105,8 +108,26 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
+.folder-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(235, 235, 235);
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 10;
+    opacity: 1;
+}
+
+/* --- */
+
+.view-more {
+    text-align: center;
+}
+
 .view-more .view-more-btn {
-    display: block;
+    display: inline-block;
     margin: 40px auto 0;
     padding: 12px 30px;
     background-color: #222;
@@ -115,6 +136,7 @@ section {
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .view-more .view-more-btn:hover {
