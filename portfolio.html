@@ -7,6 +7,10 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- script -->
+    <script src="script.js" defer></script> 
+
 </head>
 
 <body>
@@ -26,7 +30,7 @@
     <h2 class="portfolio-title" style="margin-bottom: 30px;">My Photos</h2>
 
     <div class="portfolio-gallery">
-      <div class="photo-folder">
+      <div class="photo-folder" onclick="openGallery('portraits')">
         <img src="https://images.unsplash.com/photo-1755237449468-e70840025313?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8fA%3D%3D">
         <div class="folder-text">Portraits</div>
       </div>
@@ -45,6 +49,12 @@
     </div>
 
   </section>
+
+  <!-- Overlay for gallery images -->
+  <div id="galleryOverlay">
+    <span class="close">&times;</span>
+    <div class="overlay-content" id="overlayContent"></div>
+  </div>
 
 
   <!-- footer -->

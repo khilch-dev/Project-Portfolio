@@ -1,0 +1,36 @@
+General/Home:
+√ add a subtle underline over the nav links when hovered over
+- maybe add a photo carousel on the front page, first thing you see
+    - or just a static photo
+- nav bar on bottom (left aligned)
+- more animations to all stuff (simple fades in and out, hover, fullscreen fades etc.)
+- clean up stuff (last)
+- FAQ (later)
+
+Portfolio:
+- add folders to expand more on different types of photos (portraits, landscapes, city, etc) ---> WORK IN PROGRESS
+- when hovering over nav bar, show the different types of photos in a dropdown
+- when viewing folders, clicking a photo will view the photo in fullscreen
+
+About:
+- About me (passion, what drove me, yap a bit)
+- more professional photo
+- maybe testimonials??
+- socials (instagram)
+
+Contact:
+- add contact page duh
+- simple form (name, email, session, etc.)
+
+All Photos:
+- just put everything there ig, slightly organized by different types
+- more tightly packed grid, 5-6 tiles per row maybe
+- clicking a photo will show it in fullscreen
+
+FUTURE PLANS:
+- setup a system where users can contact easily
+- a way to share photos to users after sessions, make them easily accessible and downloadable
+- make page responsive to other devices
+- learn how to photograph cars lol
+- very last: start and try doing react
+- for fun: make copyright date change automatically
