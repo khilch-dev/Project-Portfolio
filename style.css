@@ -222,6 +222,11 @@ section {
     color: #aaaaaa;
 }
 
+.bottom-links {
+    text-align: left;
+    
+}
+
 footer {
     border-top: 1px solid #222;
     padding: 30px 20px;

@@ -1,6 +1,6 @@
 General/Home:
 √ add a subtle underline over the nav links when hovered over
-* maybe add a photo slideshow on the front page, first thing you see --> figure out the styling
+- maybe add a photo slideshow on the front page, first thing you see --> figure out the styling
     - or just a static photo
 - navigation on bottom (left aligned)
 - more animations to all stuff (simple fades in and out, hover, fullscreen fades etc.)
