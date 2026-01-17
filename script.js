@@ -1,5 +1,8 @@
 // store photos in categories
 
+// FIX THIS: how photos are viewed on mobile is slightly broken
+// FIX THIS: weird shadow on hover of folders
+
 const galleries = {
     portraits: [
         'https://images.unsplash.com/photo-1766898211667-bdb967240650?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -17,6 +20,11 @@ const galleries = {
         'https://images.unsplash.com/photo-1468071174046-657d9d351a40?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8fA%3D%3D',
         // more landscape URLs
     ],
+    other: [
+        'https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTF8fHxlbnwwfHx8fHw%3D',
+        'https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTN8fHxlbnwwfHx8fHw%3D',
+        // more other URLs
+    ]
     // more galleries
 };
 
@@ -39,13 +47,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const overlay = document.getElementById("galleryOverlay");
     const closeBtn = document.querySelector(".close");
     
+    // close on X click
     closeBtn.addEventListener("click", function() {
         overlay.classList.remove("show");
     });
     
+    // close on outside click
     overlay.addEventListener("click", function(e) {
         if (e.target === overlay) {
             overlay.classList.remove("show");
         }
     });
-});
+
+    // close on "escape"
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") {
+            overlay.classList.remove("show");
+        }
+})});

@@ -1,14 +1,14 @@
 General/Home:
 √ add a subtle underline over the nav links when hovered over
-- maybe add a photo carousel on the front page, first thing you see
+* maybe add a photo slideshow on the front page, first thing you see --> figure out the styling
     - or just a static photo
-- nav bar on bottom (left aligned)
+- navigation on bottom (left aligned)
 - more animations to all stuff (simple fades in and out, hover, fullscreen fades etc.)
 - clean up stuff (last)
 - FAQ (later)
 
 Portfolio:
-- add folders to expand more on different types of photos (portraits, landscapes, city, etc) ---> WORK IN PROGRESS
+√ add folders to expand more on different types of photos (portraits, landscapes, city, etc)
 - when hovering over nav bar, show the different types of photos in a dropdown
 - when viewing folders, clicking a photo will view the photo in fullscreen
 
@@ -21,16 +21,20 @@ About:
 Contact:
 - add contact page duh
 - simple form (name, email, session, etc.)
+    - maybe use PHP? user adds info -> PHP sends contact info to my address
 
 All Photos:
 - just put everything there ig, slightly organized by different types
 - more tightly packed grid, 5-6 tiles per row maybe
 - clicking a photo will show it in fullscreen
 
-FUTURE PLANS:
+FUTURE/OTHER PLANS:
 - setup a system where users can contact easily
 - a way to share photos to users after sessions, make them easily accessible and downloadable
 - make page responsive to other devices
 - learn how to photograph cars lol
+- for a possible pricing page: use JS to create a basic tool to calculate estimated cost.
+    - have check boxes for things that the user wants -> calculate estimated total.
+    - easy way for user to calculate their budget and desired total.
 - very last: start and try doing react
 - for fun: make copyright date change automatically

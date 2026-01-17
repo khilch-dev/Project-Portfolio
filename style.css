@@ -16,6 +16,11 @@ header {
     text-align: center;
 }
 
+.background-image { 
+    background-size: cover; 
+    background-position: center;
+}
+
 header h1 {
     font-size: 3rem;
     margin-bottom: 15px;
