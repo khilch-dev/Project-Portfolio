@@ -12,13 +12,18 @@ body {
 }
 
 header {
-    padding: 80px 20px;
+    padding: 10px 20px;
     text-align: center;
 }
 
-.background-image { 
-    background-size: cover; 
+.hero-image { 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("https://images.unsplash.com/photo-1754849130787-5c50d1311c73?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OXx8fGVufDB8fHx8fA%3D%3D");
+    height: 50%;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 header h1 {
@@ -32,8 +37,16 @@ header p {
     margin: 0 auto;
 }
 
-nav {
+.topnav {
     margin-top: 30px;
+    margin-bottom: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomnav {
+    margin-bottom: 15px;
 }
 
 nav a {
@@ -174,7 +187,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: 1000;
     display: none;
     align-items: center;
@@ -188,7 +201,7 @@ section {
 
 .overlay-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 40px 20px;
     max-width: 1400px;
@@ -197,14 +210,51 @@ section {
 
 .overlay-content img {
     width: 100%;
-    height: 300px;
+    aspect-ratio: 1;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
+/* Single image fullscreen mode */
+.overlay-content.single-image img {
+    aspect-ratio: auto;
+    object-fit: contain;
+    max-height: 80vh;
+}
+
 .overlay-content img:hover {
     transform: scale(1.05);
+}
+
+/* Fullscreen image view */
+#fullscreenImageOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#fullscreenImageOverlay.show {
+    display: flex;
+}
+
+#fullscreenImageOverlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+#fullscreenImageOverlay .close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
 }
 
 .close {

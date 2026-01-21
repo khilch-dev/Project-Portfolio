@@ -11,15 +11,11 @@
 
 <body>
   <!-- intro -->
-  <header>
-    <h1>dan's very cool fartography</h1>
-    <p>
-      Capturing moments through portraits, events, and creative photography.
-    </p>
-
-    <nav>
+  <header class = "hero-image">
+    <nav class = "topnav">
       <a href="index.html">Home</a>
       <a href="portfolio.html">Portfolio</a>
+      <a href="index.html" style="font-size:1.5rem;">dan's photo</a> <!--put a logo here-->
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -31,13 +27,13 @@
 
     <div class="gallery">
       <div class="photo">
-        <img src="https://images.unsplash.com/photo-1755237449468-e70840025313?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8fA%3D%3D">
+        <img src="https://images.unsplash.com/photo-1755237449468-e70840025313?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8fA%3D%3D" class="clickable-image">
       </div>
       <div class="photo">
-        <img src="https://images.unsplash.com/photo-1754633191921-8272276cd214?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTJ8fHxlbnwwfHx8fHw%3D">
+        <img src="https://images.unsplash.com/photo-1754633191921-8272276cd214?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTJ8fHxlbnwwfHx8fHw%3D" class="clickable-image">
       </div>
       <div class="photo">
-        <img src="https://images.unsplash.com/photo-1731486789540-8309e0e0f71f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTN8fHxlbnwwfHx8fHw%3D">
+        <img src="https://images.unsplash.com/photo-1731486789540-8309e0e0f71f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTN8fHxlbnwwfHx8fHw%3D" class="clickable-image">
       </div>
       <div class="photo">Image Placeholder</div>
       <div class="photo">Image Placeholder</div>
@@ -51,16 +47,26 @@
 
 <br>
 
+  <!-- overlay for gallery images -->
+  <div id="galleryOverlay">
+    <span class="close">&times;</span>
+    <div class="overlay-content" id="overlayContent"></div>
+  </div>
+
   <!-- footer -->
   <footer>
-    <nav class = "bottom-links">
+    <nav class = "bottomnav">
       <a href="index.html">Home</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    © 2025 Daniel — All rights reserved (dare you ill sue)
+
+    © 2025 Daniel Khilchenko — All rights reserved
   </footer>
+
+  <!-- script -->
+  <script src="script.js" defer></script>
 
 </body>
 </html>

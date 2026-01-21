@@ -1,16 +1,17 @@
 General/Home:
 √ add a subtle underline over the nav links when hovered over
-- maybe add a photo slideshow on the front page, first thing you see --> figure out the styling
-    - or just a static photo
-- navigation on bottom (left aligned)
+√ maybe add a photo slideshow on the front page, first thing you see --> figure out the styling
+    - work on how the image will look when on different devices
+√ navigation on bottom
+√ clicking photos will be viewed in fullscreen
 - more animations to all stuff (simple fades in and out, hover, fullscreen fades etc.)
-- clean up stuff (last)
 - FAQ (later)
 
 Portfolio:
 √ add folders to expand more on different types of photos (portraits, landscapes, city, etc)
-- when hovering over nav bar, show the different types of photos in a dropdown
-- when viewing folders, clicking a photo will view the photo in fullscreen
+? when hovering over nav bar, display different types of photos in a dropdown
+√ when viewing folders, clicking a photo will view the photo in fullscreen
+- add more folders and photos
 
 About:
 - About me (passion, what drove me, yap a bit)
@@ -36,5 +37,6 @@ FUTURE/OTHER PLANS:
 - for a possible pricing page: use JS to create a basic tool to calculate estimated cost.
     - have check boxes for things that the user wants -> calculate estimated total.
     - easy way for user to calculate their budget and desired total.
-- very last: start and try doing react
-- for fun: make copyright date change automatically
+- (after development) make a login system for admins
+    - admins (me duh) can edit what photos are displayed on the page
+    - admins can also upload photos taken from sessions to give to clients

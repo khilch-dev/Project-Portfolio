@@ -1,7 +1,6 @@
 // store photos in categories
 
 // FIX THIS: how photos are viewed on mobile is slightly broken
-// FIX THIS: weird shadow on hover of folders
 
 const galleries = {
     portraits: [
@@ -32,6 +31,7 @@ const galleries = {
 function openGallery(type) {
     const container = document.getElementById("overlayContent");
     container.innerHTML = "";
+    container.classList.remove("single-image");
 
     galleries[type].forEach(src => {
         const img = document.createElement("img");
@@ -62,6 +62,69 @@ document.addEventListener("DOMContentLoaded", function() {
     // close on "escape"
     document.addEventListener("keydown", function(e) {
         if (e.key === "Escape") {
-            overlay.classList.remove("show");
+            const fullscreenOverlay = document.getElementById("fullscreenImageOverlay");
+            if (fullscreenOverlay && fullscreenOverlay.classList.contains("show")) {
+                fullscreenOverlay.classList.remove("show");
+            } else {
+                overlay.classList.remove("show");
+            }
         }
-})});
+    });
+
+    // *ai was used to help write the overlay gallery*
+
+    // make all clickable images open in fullscreen
+    const clickableImages = document.querySelectorAll(".clickable-image");
+    clickableImages.forEach(img => {
+        img.style.cursor = "pointer";
+        img.addEventListener("click", function() {
+            const container = document.getElementById("overlayContent");
+            container.innerHTML = "";
+            container.classList.add("single-image");
+            
+            const fullImg = document.createElement("img");
+            fullImg.src = this.src;
+            container.appendChild(fullImg);
+            
+            overlay.classList.add("show");
+        });
+    });
+
+    // handle fullscreen view for gallery images
+    const fullscreenOverlay = document.createElement("div");
+    fullscreenOverlay.id = "fullscreenImageOverlay";
+    const closeBtn2 = document.createElement("span");
+    closeBtn2.className = "close";
+    closeBtn2.textContent = "×";
+    fullscreenOverlay.appendChild(closeBtn2);
+    const fullscreenImg = document.createElement("img");
+    fullscreenOverlay.appendChild(fullscreenImg);
+    document.body.appendChild(fullscreenOverlay);
+
+    // delegate click handler for gallery images (only when viewing multiple images)
+    overlay.addEventListener("click", function(e) {
+        if (e.target.tagName === "IMG" && e.target.parentElement.id === "overlayContent" && document.getElementById("overlayContent").children.length > 1) {
+            fullscreenImg.src = e.target.src;
+            fullscreenOverlay.classList.add("show");
+        }
+    });
+
+    // close fullscreen view on X click
+    closeBtn2.addEventListener("click", function() {
+        fullscreenOverlay.classList.remove("show");
+    });
+
+    // close fullscreen on outside click
+    fullscreenOverlay.addEventListener("click", function(e) {
+        if (e.target === fullscreenOverlay) {
+            fullscreenOverlay.classList.remove("show");
+        }
+    });
+
+    // close fullscreen on escape
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape" && fullscreenOverlay.classList.contains("show")) {
+            fullscreenOverlay.classList.remove("show");
+        }
+    });
+});
