@@ -31,7 +31,9 @@ All Photos:
 
 FUTURE/OTHER PLANS:
 - setup a system where users can contact easily
-- a way to share photos to users after sessions, make them easily accessible and downloadable
+√ a way to share photos to users after sessions, make them easily accessible and downloadable
+    - work on making it more secure, easier to download, and a bit nicer
+    - figure out how to automate the process, scripts (Node.js?)
 - make page responsive to other devices
 - learn how to photograph cars lol
 - for a possible pricing page: use JS to create a basic tool to calculate estimated cost.

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+
+  <!-- style sheet -->
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+  <!-- intro -->
+  <header class = "hero-image hero-gallery1">
+    <nav class = "topnav">
+      <a href="../../index.html">Home</a>
+      <a href="../../portfolio.html">Portfolio</a>
+      <a href="../../index.html" style="font-size:1.5rem;">dan's photo</a>
+      <a href="../../about.html">About</a>
+      <a href="../../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- main content -->
+  <section style="padding: 60px 20px;">
+    <h2 style="margin-bottom: 30px;">Your Photoshoot</h2>
+
+    <div class="gallery">
+      <div class="photo">
+        <img src="/galleries/gallery_test/gallery_test_pics/pic1.jpg" class="clickable-image">
+      </div>
+      <div class="photo">
+        <img src="/galleries/gallery_test/gallery_test_pics/pic2.jpg" class="clickable-image">
+      </div>
+      <div class="photo">
+        <img src="/galleries/gallery_test/gallery_test_pics/pic3.jpg" class="clickable-image">
+      </div>
+      <div class="photo">
+        <img src="/galleries/gallery_test/gallery_test_pics/pic4.jpg" class="clickable-image">
+      </div>
+      <div class="photo">
+        <img src="/galleries/gallery_test/gallery_test_pics/pic5.jpg" class="clickable-image">
+      </div>
+      <div class="photo">
+        <img src="/galleries/gallery_test/gallery_test_pics/pic6.jpg" class="clickable-image">
+      </div>
+    </div>
+  </section>
+
+  
+    <!-- download button -->
+    <div class="btn-style">
+      <a href="/galleries/gallery_test/gallery_test_pics/yourphotos.zip" download>
+        <button class="btn">Download All Photos</button>
+      </a>
+    </div>
+
+    <br>
+
+  <!-- overlay for gallery images -->
+  <div id="galleryOverlay">
+    <span class="close">&times;</span>
+    <div class="overlay-content" id="overlayContent"></div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <nav class = "bottomnav">
+      <a href="../../index.html">Home</a>
+      <a href="../../portfolio.html">Portfolio</a>
+      <a href="../../about.html">About</a>
+      <a href="../../contact.html">Contact</a>
+    </nav>
+
+    © 2026 Daniel Khilchenko — All rights reserved
+  </footer>
+
+  <!-- script -->
+  <script src="../../script.js" defer></script>
+
+</body>
+</html>
