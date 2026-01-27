@@ -9,7 +9,7 @@ General/Home:
 
 Portfolio:
 √ add folders to expand more on different types of photos (portraits, landscapes, city, etc)
-? when hovering over nav bar, display different types of photos in a dropdown
+X when hovering over nav bar, display different types of photos in a dropdown
 √ when viewing folders, clicking a photo will view the photo in fullscreen
 - add more folders and photos
 
@@ -33,7 +33,7 @@ FUTURE/OTHER PLANS:
 - setup a system where users can contact easily
 √ a way to share photos to users after sessions, make them easily accessible and downloadable
     - work on making it more secure, easier to download, and a bit nicer
-    - figure out how to automate the process, scripts (Node.js?)
+    - figure out how to automate the process, scripts (Node.js? + Cloudinary!!)
 - make page responsive to other devices
 - learn how to photograph cars lol
 - for a possible pricing page: use JS to create a basic tool to calculate estimated cost.

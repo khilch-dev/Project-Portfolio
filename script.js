@@ -5,23 +5,28 @@
 const galleries = {
     portraits: [
         'https://images.unsplash.com/photo-1766898211667-bdb967240650?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1766903882059-931704d12a20?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1768066360882-14302bb37971?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1768215951564-7a24614516da?q=80&w=1028&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1766898211667-bdb967240650?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1766903882059-931704d12a20?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1768066360882-14302bb37971?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1768215951564-7a24614516da?q=80&w=1028&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         // more portrait URLs
     ],
-    landscapes: [
-        'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1468071174046-657d9d351a40?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8fA%3D%3D',
-        // more landscape URLs
+    nature: [
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3932-HDR_vn6s6b.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3921-HDR_d5qnz4.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3831_tbbwl9.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3813_nqhohv.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3789_aimmlt.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3738_zt4yzj.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3711_verdiq.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3879_k4g07p.jpg'
+        // more nature URLs
     ],
     other: [
-        'https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTF8fHxlbnwwfHx8fHw%3D',
-        'https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTN8fHxlbnwwfHx8fHw%3D',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/489A193D-41BF-4DA4-B4A4-C55A0D56B298_mpenqx.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3339_sqccrw.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_0450_g6hbza.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_0473_dtducf.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_0500_zolr3y.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_0505-HDR_exe7pt.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3902_uqmdl4.jpg',
+        'https://res.cloudinary.com/dmq9qoqgv/image/upload/w_600/IMG_3755_rgbclr.jpg'
         // more other URLs
     ]
     // more galleries

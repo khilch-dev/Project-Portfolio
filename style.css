@@ -28,18 +28,18 @@ header {
 
 .hero-index {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("/hero-images/hero-index.jpeg");
+    url("https://res.cloudinary.com/dmq9qoqgv/image/upload/f_auto,q_auto,w_2400/IMG_3738_zt4yzj.jpg");
 }
 
 .hero-portfolio {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("/hero-images/hero-portfolio.jpeg");
+    url("https://res.cloudinary.com/dmq9qoqgv/image/upload/f_auto,q_auto,w_2400/IMG_0450_g6hbza.jpg");
     background-position: bottom;
 }
 
 .hero-about {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("/hero-images/hero-about.jpeg");
+    url("https://res.cloudinary.com/dmq9qoqgv/image/upload/f_auto,q_auto,w_2400/IMG_3816_po9et3.jpg");
 }
 
 .hero-gallery1 {
